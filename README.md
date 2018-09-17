@@ -14,7 +14,7 @@ Jingfeng Guo
 
 #### Programming field
 
-Genening`planing` , Atlanswer`front end` , djleeyuanfang`back end` , luozhh33
+Genening `planing` , Atlanswer `front end` , djleeyuanfang `back end` , luozhh33
 
 #### User interface and art design field
 
