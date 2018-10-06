@@ -1,9 +1,8 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/publish/publish",
-    "pages/about/about",
-    "pages/logs/logs"
+    "pages/notification/notification",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,8 +19,8 @@
       "iconPath": "res/ic_tabbar_home_inactive.png",
       "selectedIconPath": "res/ic_tabbar_home_selected.png"
     }, {
-      "pagePath": "pages/publish/publish",
-      "text": "发布",
+      "pagePath": "pages/notification/notification",
+      "text": "消息",
       "iconPath": "res/ic_tabbar_publish_inactive.png",
       "selectedIconPath": "res/ic_tabbar_publish_selected.png"
     }, {
