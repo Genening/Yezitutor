@@ -1,4 +1,4 @@
-// pages/publish/publish.js
+// pages/notification/notification.js
 Page({
 
   /**
