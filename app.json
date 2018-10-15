@@ -1,33 +1,58 @@
 {
-  "pages":[
-    "pages/home/home",
-    "pages/notification/notification",
-    "pages/about/about"
+  "pages":
+  [
+    "pages/home/home",         
+    "pages/home/messeage_card/messeage_card",    
+    "pages/home/release/release",          
+    "pages/home/navigation/navigation",   
+    "pages/home/weather/weather",        
+    "pages/notification/notification",    
+    "pages/notification/my_release/my_release",   
+    "pages/notification/my_response/my_response",   
+    "pages/sign_in/sign_in",    
+    "pages/sign_in/select/select",  
+    "pages/about/about",  
+    "pages/about/me/me",    
+    "pages/about/privacyitems/privacyitems",  
+    "pages/about/feedback/feedback"    
   ],
-  "window":{
+
+
+  "window":
+  {
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#80deea",
     "navigationBarTitleText": "叶子家教",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
+
+
+  "tabBar": 
+  {
     "borderStyle": "white",
     "selectedColor": "#4bacb8",
-    "list": [{
+    "list": 
+    [{
       "pagePath": "pages/home/home",
       "text": "叶子",
       "iconPath": "res/ic_tabbar_home_inactive.png",
       "selectedIconPath": "res/ic_tabbar_home_selected.png"
-    }, {
+     },
+
+     {
       "pagePath": "pages/notification/notification",
       "text": "消息",
       "iconPath": "res/ic_tabbar_publish_inactive.png",
       "selectedIconPath": "res/ic_tabbar_publish_selected.png"
-    }, {
+     }, 
+
+     
+     {
       "pagePath": "pages/about/about",
       "text": "我的",
       "iconPath": "res/ic_tabbar_about_inactive.png",
       "selectedIconPath": "res/ic_tabbar_about_selected.png"
-    }]
+     }]
+
   }
 }
