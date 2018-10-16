@@ -1,1 +1,4 @@
-/* pages/home/home.wxss */
+/* pages/home/home.wxss - 主页样式 */
+welcomeMsg {
+  align-content: center
+}
