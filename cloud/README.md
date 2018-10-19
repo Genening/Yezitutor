@@ -1,16 +1,19 @@
-# djlee的sdk 修改自wafer2
+## djlee的sdk 修改自wafer2
 
-```page以及其他地方的使用方法
+#### page以及其他地方的使用方法
+
+```javascript
 var req = require('./cloud/index.js');
 var req = require('../../cloud/index.js');
 .
 .
 .
+req.login(options)
+```
 
-```req.login(options)
+#### 登陆并返回用户的详细信息
 
-登陆并返回用户的详细信息
-
+```javascript
 req.login({
     success: function (userInfo) {
         //dosth;
@@ -19,6 +22,7 @@ req.login({
         //dosth;
     }
 });
+```
 
 #### 参数
 |参数         |类型           |说明
@@ -32,10 +36,13 @@ req.login({
 #### userInfo 的详细信息
 以后确定了再补充
 
-```req.getUserInfo(options)
+```javascript
+req.getUserInfo(options)
+```
 
-获取自己详细信息或者他人的基本信息
+#### 获取自己详细信息或者他人的基本信息
 
+```javascript
 req.getUserInfo({
   isUpgrade:true,
   data:{id:56},
@@ -49,6 +56,7 @@ req.getUserInfo({
         //dosth;
     }
 });
+```
 
 #### 参数
 |参数         |类型           |说明
@@ -64,10 +72,13 @@ req.getUserInfo({
 |                             |complect(error,param)
 |                             |//完成回调，无论成功失败都回调，其中error是失败时的error，param是成功时的参数
 
-```req.putUserInfo(options)
+```javascript
+req.putUserInfo(options)
+```
 
-更新且只能自己的UserInfo
+> 只能更新自己的UserInfo
 
+```javascript
 req.getUserInfo({
   data:data,
   success: function (userInfo) {
@@ -80,6 +91,7 @@ req.getUserInfo({
         //dosth;
     }
 });
+```
 
 #### 参数
 |参数         |类型           |说明
@@ -93,10 +105,13 @@ req.getUserInfo({
 |                             |complect(error,param)
 |                             |//完成回调，无论成功失败都回调，其中error是失败时的error，param是成功时的参数
 
-```req.getItemDetail(options)
+```javascript
+req.getItemDetail(options)
+```
 
-获得某个家教信息的详细信息
+> 获得某个家教信息的详细信息
 
+```javascript
 req.getItemDetail({
   data:{},
   success: function (Item) {
@@ -109,6 +124,7 @@ req.getItemDetail({
         //dosth;
     }
 });
+```
 
 #### 参数
 |参数         |类型           |说明
@@ -132,7 +148,9 @@ req.getItemDetail({
 |avaiTime     |String         |家教的时间
 |pubTime      |String         |发布该家教的时间
 
-二进制代表多个选项的写方法
+#### 二进制代表多个选项的写方法
+
+```javascript
 var stuType = 0;
 stuType |= 1;//代表包括大学
 stuType>>1; //右移一位
@@ -147,12 +165,14 @@ res =stuType & 1;
 .
 .
 .
+```
 
-```req.putItemDetail(options)
-
-修改或者发布家教信息
+```javascript
+req.putItemDetail(options)
+//修改或者发布家教信息
 //如果是发布信息的时候注意提交Item中的必选参数
 
+```javascript
 req.getItemDetail({
   data:data,
   success: function (Item) {
@@ -165,8 +185,10 @@ req.getItemDetail({
         //dosth;
     }
 });
+```
 
 #### 参数
+
 |参数         |类型           |说明
 |-------------|---------------|--------------
 |options      |object         |data:{address:"韶关市北江中学对面煤渣操场"}
@@ -178,9 +200,9 @@ req.getItemDetail({
 |                             |complect(error,param)
 |                             |//完成回调，无论成功失败都回调，其中error是失败时的error，param是成功时的参数
 
-```req.getItemList(options)
-
-获取搜索家教信息的结果列表
+```
+req.getItemList(options)
+//获取搜索家教信息的结果列表
 
 req.getItemList({
   data:data,
@@ -194,6 +216,7 @@ req.getItemList({
         //dosth;
     }
 });
+```
 
 #### 参数
 |参数         |类型           |说明
@@ -207,7 +230,10 @@ req.getItemList({
 |                             |complect(error,param)
 |                             |//完成回调，无论成功失败都回调，其中error是失败时的error，param是成功时的参数
 
-#### data中的参数 ```以后继续再补充
+#### data中的参数
+
+以后继续再补充
+
 |成员         |类型           |说明
 |-------------|---------------|--------------
 |stuType      |int            |详看Item
