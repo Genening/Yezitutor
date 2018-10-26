@@ -1,2 +1,11 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- pages/home/home.wxml - 主页结构 -->
+<text>Path:
+  <text>pages/home/home.wxml
+  </text>
+  <text id='welcomeMsg'>{{welcomeMsg}}
+  </text>
+</text>
+<view id='home_info'>
+  <button>Click
+  </button>
+</view>

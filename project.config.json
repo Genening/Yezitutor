@@ -1,5 +1,5 @@
 {
-	"description": "Project config",
+	"description": "project.config.json - 小程序项目配置",
 	"packOptions": {
 		"ignore": []
 	},
