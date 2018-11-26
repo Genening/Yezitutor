@@ -4,6 +4,10 @@ This is a mini program base on the tencent Wechat platform. And it is in the lig
 
 ---
 
+I can push as well.
+
+---
+
 ## Dev team configuation
 
 ### Official account group
