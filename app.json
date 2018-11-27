@@ -1,14 +1,5 @@
+
 { 
-  "window": {
-    "backgroundTextStyle":"light",
-    "description": "app.json - 小程序全局配置",
-    "navigationBarBackgroundColor": "#80deea",
-    "navigationBarTitleText": "叶子家教",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "default",
-    "backgroundColor": "#ffffff",
-    "backgroungTextStyle": "light"
-  },
   "pages": [
     "pages/home/home",
     "pages/home/messeage_card/messeage_card",
@@ -17,16 +8,26 @@
     "pages/notification/notification",
     "pages/notification/my_release/my_release",
     "pages/notification/my_response/my_response",
-    "pages/sign_in/sign_in",
-    "pages/sign_in/select/select",
     "pages/about/about",
     "pages/about/me/me",
     "pages/about/privacyitems/privacyitems",
     "pages/about/feedback/feedback"
   ],
+  "window": {
+
+
+    "navigationBarBackgroundColor": "#80deea",
+    "navigationBarTitleText": "叶子家教",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+
+    "backgroundColor": "#ffffff",
+    "backgroungTextStyle": "light"
+  },
  "tabBar": {
     "color": "",
     "selectedColor": "#4bacb8",
+
     "borderStyle": "white",
     "backgroundColor": "",
     "position": "buttom",
@@ -35,12 +36,18 @@
       "text": "叶子",
       "iconPath": "res/ic_tabbar_home_inactive.png",
       "selectedIconPath": "res/ic_tabbar_home_selected.png"
-     }, {
+
+     }, 
+
+      {
       "pagePath": "pages/notification/notification",
       "text": "消息",
       "iconPath": "res/ic_tabbar_publish_inactive.png",
       "selectedIconPath": "res/ic_tabbar_publish_selected.png"
-     }, {
+
+     }, 
+     {
+
       "pagePath": "pages/about/about",
       "text": "我的",
       "iconPath": "res/ic_tabbar_about_inactive.png",
@@ -53,4 +60,5 @@
     "uploadFile": 20000,
     "downloadFile": 20000
   }
+}
 }
