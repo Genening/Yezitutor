@@ -1,4 +1,3 @@
-
 { 
   "pages": [
     "pages/home/home",
@@ -13,52 +12,47 @@
     "pages/about/privacyitems/privacyitems",
     "pages/about/feedback/feedback"
   ],
-  "window": {
 
-
-    "navigationBarBackgroundColor": "#80deea",
+  "window": { "navigationBarBackgroundColor": "#80deea",
     "navigationBarTitleText": "叶子家教",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default",
-
     "backgroundColor": "#ffffff",
     "backgroungTextStyle": "light"
   },
- "tabBar": {
-    "color": "",
-    "selectedColor": "#4bacb8",
 
-    "borderStyle": "white",
-    "backgroundColor": "",
+ "tabBar": {
+    "color": "black",
+    "selectedColor": "#4bacb8",
+    "borderStyle": "s",
+    "backgroundColor": "white",
     "position": "buttom",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "叶子",
-      "iconPath": "res/ic_tabbar_home_inactive.png",
-      "selectedIconPath": "res/ic_tabbar_home_selected.png"
-
+      "iconPath": "/res/NewIcons/home2-ashen.png",
+      "selectedIconPath": "/res/NewIcons/home2-blue.png"
      }, 
 
       {
       "pagePath": "pages/notification/notification",
       "text": "消息",
-      "iconPath": "res/ic_tabbar_publish_inactive.png",
-      "selectedIconPath": "res/ic_tabbar_publish_selected.png"
-
+      "iconPath": "/res/NewIcons/notification1-ashen.png",
+      "selectedIconPath": "/res/NewIcons/notification1-blue.png"
      }, 
      {
 
       "pagePath": "pages/about/about",
       "text": "我的",
-      "iconPath": "res/ic_tabbar_about_inactive.png",
-      "selectedIconPath": "res/ic_tabbar_about_selected.png"
+      "iconPath": "/res/NewIcons/me1-ashen.png",
+      "selectedIconPath": "/res/NewIcons/me1-blue.png"
      }]
   },
+
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 20000,
     "uploadFile": 20000,
     "downloadFile": 20000
   }
-}
 }
