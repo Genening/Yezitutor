@@ -27,10 +27,10 @@
     "pageOrientation": "portrait"
   },
  "tabBar": {
-    "color": "black",
+    "color": "silver",
     "selectedColor": "#4bacb8",
     "backgroundColor": "#ffffff",
-    "borderStyle": "white",
+    "borderStyle": "silver",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "叶子",
@@ -44,8 +44,8 @@
     }, {
       "pagePath": "pages/about/about",
       "text": "我的",
-      "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
-      "selectedIconPath": "res/ic/ic_tabBar_notification_inactive.png"
+      "iconPath": "/res/ic/ic_tabBar_about_inactive.png",
+      "selectedIconPath": "/res/ic/ic_tabBar_about_selected.png"
     }],
     "position": "buttom"
     },

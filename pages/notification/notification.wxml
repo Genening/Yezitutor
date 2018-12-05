@@ -1,2 +1,12 @@
 <!--pages/notification/notification.wxml-->
-<text>pages/notification/notification.wxml</text>
+<view id='content'>
+  <view class='card' id='card1'>
+    <text class='title'>私信</text>
+  </view>
+  <view class='card' id='card2'>
+    <text class='title'>收藏</text>
+  </view>
+  <view class='card' id='card3'>
+    <text class='title'>发布</text>
+  </view>
+</view>

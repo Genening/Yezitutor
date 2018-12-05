@@ -1,17 +1,21 @@
 <!-- pages/home/home.wxml - 主页结构 -->
-<view id='showcard'>
-
+<view id='content'>
+  <view id='showcard'></view>
+  <view id='board'>
+      <button class='btn' id='btn1'>学生</button>
+      <button class='btn' id='btn2'>老师</button>
+      <button class='btn' id='btn3'>全部</button>
+  </view>
+  <view>
+      <view class='mescard' id='card1'></view>
+      <view class='mescard' id='card2'></view>  
+      <view class='mescard' id='card3'></view>
+      <view class='mescard' id='card4'></view>
+      <view class='mescard' id='card5'></view>
+      <view class='mescard' id='card6'></view>
+      <view class='mescard' id='card7'></view>
+      <view class='mescard' id='card8'></view>
+      <view class='mescard' id='card9'></view>
+      <view class='mescard' id='card10'></view>
+  </view>
 </view>
-<view id='board'>
-  <button class='btn' id='btn1'>学生</button>
-  <button class='btn' id='btn2'>老师</button>
-  <button class='btn' id='btn3'>全部</button>
-</view>
-  <view class='mescard' id='card1'>
-  </view>
-  <view class='mescard' id='card2'>
-  </view>  
-  <view class='mescard' id='card3'>
-  </view>
-  <view class='mescard' id='card4'>
-  </view>
