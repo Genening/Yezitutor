@@ -31,7 +31,7 @@
     "color": "silver",
     "selectedColor": "#4bacb8",
     "backgroundColor": "#ffffff",
-    "borderStyle": "silver",
+    "borderStyle": "black",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "叶子",
@@ -48,7 +48,7 @@
       "iconPath": "/res/ic/ic_tabBar_about_inactive.png",
       "selectedIconPath": "/res/ic/ic_tabBar_about_selected.png"
     }],
-    "position": "buttom"
+    "position": "bottom"
     },
   "networkTimeout": {
     "request": 10000,

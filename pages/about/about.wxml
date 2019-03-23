@@ -1,13 +1,1 @@
 <!--pages/about/about.wxml-->
-<view id='content'>
-  <view id='header'>
-    <text id='title'>关于我</text>
-    <button id='hbtn'>> 阳光帅气大男孩</button>
-    <textarea id='details'>让我想想，这里该编一些什么内容进来。。。</textarea>
-  </view>
-  <view id='body'>
-    <button class='btn'id='btn1'>> 联系方式</button>
-    <button class='btn'>> 问题反馈</button>
-    <button class='btn'>> 隐私条约</button>
-  </view>
-</view>
