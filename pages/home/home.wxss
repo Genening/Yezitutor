@@ -1,60 +1,6 @@
 /* pages/home/home.wxss - 主页样式 */
-#content{
-  width: auto;
-  height: auto;
-  margin-top:0px;
-  background: hsl(40, 33%, 98%);
-}
-#content #showcard{
-  width:97%;
-  height: 100px;
-  background: #9cdaf7;
-  border-radius: 5px;
-  border: none;
-  margin: 5px;
-  box-shadow: hsl(0, 1%, 83%) 1px 1px 1px 1px;
-}
-
-#content #board{
-  width: 100%;
-  height: 60px;
-  border:none;
-  border-bottom: 1px solid #e2e1e1;
-}
-
-#content #board .btn{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border-color: white;
-  box-shadow:silver 1px 1px 1px 1px;
-  font-family:inherit;
-  font-size: 13px;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  color: white;
-  padding: 9px;
-  display: inline-block;
-}
-#content #board #btn1{
-  position: relative;
-  left: 40px;
-  background-color: hsl(172, 70%, 59%);
-}
-#content #board #btn2{
-  position: relative;
-  left: 85px;
-  background-color: rgb(155, 47, 255);
-}
-#content #board #btn3{
-  position: relative;
-  left: 130px;
-  background-color: rgb(252, 200, 186);
-}
-
-#content .mescard{
-  width: 100%;
-  height: 70px;
-  background:white;
-  border-bottom: 1px solid #e2e1e1;
-  }
+/* .swiper{
+  width: 100%,
+  margin-bottom:3px,
+  margin-top:3px
+} */

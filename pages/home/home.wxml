@@ -1,1 +1,42 @@
 <!-- pages/home/home.wxml - 主页结构 -->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view id='swiper'><swiper circular='true' class='swiper1' autoplay='true' interval='5000' indicator-dots='true' indicator-color='white'>
+<swiper-item><image src='/res/image/1.jpg'></image></swiper-item>
+<swiper-item><image src='/res/image/2.jpg'></image></swiper-item>
+<swiper-item><image src='/res/image/3.jpg'></image></swiper-item>
+</swiper></view>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>
+<i-card title="张小夏" full='true' extra="韶关" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">高中/初中/小学 数学</view>
+    <view slot="footer">微信：11111111</view>
+</i-card>

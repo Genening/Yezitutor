@@ -19,7 +19,7 @@
     "navigationBarTitleText": "叶子家教",
     "margin":"auto",
     "navigationStyle": "default",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#f8f8f9",
     "backgroundTextStyle": "light",
     "backgroundColorTop": "#ffffff",
     "backgroundColorBottom": "#ffffff",
@@ -49,6 +49,13 @@
       "selectedIconPath": "/res/ic/ic_tabBar_about_selected.png"
     }],
     "position": "bottom"
+    },
+    "usingComponents": {
+      "i-button": "/dist/button/index",
+      "i-card": "/dist/card/index",
+      "i-input": "/dist/input/index",
+      "van-search": "/vant-weapp/search/index",
+      "van-button": "/vant-weapp/button/index"
     },
   "networkTimeout": {
     "request": 10000,
