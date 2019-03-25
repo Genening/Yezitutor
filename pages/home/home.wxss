@@ -1,6 +1,4 @@
 /* pages/home/home.wxss - 主页样式 */
-/* .swiper{
-  width: 100%,
-  margin-bottom:3px,
-  margin-top:3px
-} */
+.slide-image{
+  width: 100%
+}

@@ -8,6 +8,12 @@ Page({
     //loadOption - (query)打开当前页面路径中的参数
     console.log("[info] 进入主页...")
   },
+  current: 'tab1',
+  handleChange({ detail }) {
+    this.setData({
+      current: detail.key
+    });
+  },
   // onShow: function () {
   //   //onShow - 监听页面显示
   // },

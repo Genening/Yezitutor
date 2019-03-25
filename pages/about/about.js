@@ -5,14 +5,16 @@ Page({
    * Page initial data
    */
   data: {
-
+    src: '/res/image/1.jpg',
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    var student = wx.getStorageSync('student');
+    console.log(student);
+    this.setData({ student: student });
   },
 
   /**
