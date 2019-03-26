@@ -14,6 +14,10 @@ Page({
       current: detail.key
     });
   },
+  onSearch:function() {
+    res = wx.request.value
+    console.log(res)
+  }
   // onShow: function () {
   //   //onShow - 监听页面显示
   // },

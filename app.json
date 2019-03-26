@@ -60,8 +60,10 @@
       "i-tab": "/dist/tab/index",
       "van-nav-bar": "/vant-weapp/nav-bar/index",
       "i-cell-group": "/dist/cell-group/index",
-      "i-cell": "/dist/cell/index"
+      "i-cell": "/dist/cell/index",
+      "i-avatar": "/dist/avatar/index"
     },
+  "cloud":true,
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 20000,

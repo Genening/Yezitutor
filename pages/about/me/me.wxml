@@ -1,2 +1,2 @@
 <!--pages/about/me/me.wxml-->
-<text>pages/about/me/me.wxml</text>
+<map style='width:100%;height:100%' bindmarkertap="markertap" longitude="广州经度" latitude="广州纬度"></map>
