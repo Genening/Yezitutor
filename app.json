@@ -1,4 +1,5 @@
 { 
+  "cloud": true,
   "description": "app.json - 小程序全局配置",
   "pages": [
     "pages/home/home",
@@ -25,7 +26,8 @@
     "backgroundColorBottom": "#ffffff",
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 50,
-    "pageOrientation": "portrait"
+    "pageOrientation": "portrait",
+    "frontsize":15
   },
  "tabBar": {
     "color": "silver",
@@ -63,7 +65,6 @@
       "i-cell": "/dist/cell/index",
       "i-avatar": "/dist/avatar/index"
     },
-  "cloud":true,
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 20000,

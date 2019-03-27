@@ -1,15 +1,15 @@
 <!--pages/home/messeage_card/messeage_card.wxml-->
 <view id='content'>
   <view>
-    <i-panel title="基础用法">
-    <i-input value="{{ value1 }}" title="姓名" autofocus placeholder="名字" />
-    <i-input value="{{ value5 }}" type='textarea' title="地区" placeholder="请填入您所在地区" />
-    <i-input value="{{ value2 }}" type="number" title="联系电话" placeholder="请输入手机号" />
-    <i-input value="{{ value6 }}" type="number" title="微信号" placeholder="请输入您的微信号" />
-    <i-input value="{{ value3 }}" type="textarea" title="个人简介" placeholder="请输入(最多50字)" maxlength="50" />
-    <i-input value="{{ value4 }}" type='textarea' title="辅导年级/科目" placeholder='请输入意向年级/科目' />
-    <i-input value="{{ value7 }}" type='number' title="意向时薪" placeholder='元/小时'/>
-    <i-input value="{{ value8 }}" type="textarea" title="备注" placeholder="您的备注" maxlength="50" />
-    </i-panel>
+    <i-cell-group>
+    <i-cell value="{{ name }}" title="姓名"></i-cell>
+    <i-cell value="{{ position }}" title="地区"></i-cell>
+    <i-cell value="{{ phone }}" title="联系电话"></i-cell>
+    <i-cell value="{{ wechat }}" title="微信号"></i-cell>
+    <i-cell value="{{ introduction }}" title="个人简介"></i-cell>
+    <i-cell value="{{ subject }}" title="辅导年级/科目"></i-cell>
+    <i-cell value="{{ salary }}" title="意向时薪"></i-cell>
+    <i-cell value="{{ more }}" title="备注"></i-cell>
+    </i-cell-group>
   </view>
 </view>

@@ -1,5 +1,4 @@
 {
-  "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
 	"description": "project.config.json - 小程序项目配置",
 	"packOptions": {

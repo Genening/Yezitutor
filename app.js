@@ -1,6 +1,9 @@
 //app.js - 小程序构造逻辑
 App ({
   onLaunch: function (launchOption) {
+    wx.cloud.init({
+      traceUser:true
+    })
     //onLaunch - 监听小程序初始化
     console.log("[info] 小程序初始化...")
   },
