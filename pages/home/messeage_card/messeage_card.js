@@ -1,4 +1,5 @@
 // pages/home/messeage_card/messeage_card.js
+const db = wx.cloud.database();
 Page({
   onClickLeft() {
     wx.showToast({ title: '点击返回', icon: 'none' });
@@ -17,7 +18,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    db.collection('student').doc(options.id).get({
+      success: res => {
+        console.log(res.data);
+        this.setData({
+          student: res.data,
+          id: options.id
+        });
+      },
+      fail: err => {
+        console.error(err);
+      }
+    })
+    //console.log(options)
   },
 
   /**

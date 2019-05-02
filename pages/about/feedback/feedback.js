@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    feedback:''
   },
 
   /**
@@ -14,7 +14,29 @@ Page({
   onLoad: function (options) {
 
   },
-
+  Feedback:function(e){
+    var that = this
+    var db = wx.cloud.database()
+    var feedback = e.detail.value.feedback
+    db.collection('feedback').add({
+      data:{
+        feedback:feedback
+      },
+      success:res=>{
+        this.setData({
+          feedback:feedback
+        })
+        wx.showToast({
+          title: '谢谢反馈',
+        })
+      },
+      fail:res=>{
+        wx.showToast({
+          title: '提交失败',
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
