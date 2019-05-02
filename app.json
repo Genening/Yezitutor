@@ -1,4 +1,5 @@
-{ 
+{
+  "cloud": true,
   "description": "app.json - 小程序全局配置",
   "pages": [
     "pages/home/home",
@@ -17,42 +18,62 @@
     "navigationBarBackgroundColor": "#80deea",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "叶子家教",
+    "margin": "auto",
     "navigationStyle": "default",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#f8f8f9",
     "backgroundTextStyle": "light",
     "backgroundColorTop": "#ffffff",
     "backgroundColorBottom": "#ffffff",
-    "enablePullDownRefresh": false,
+    "enablePullDownRefresh": true,
     "onReachBottomDistance": 50,
-    "pageOrientation": "portrait"
+    "pageOrientation": "portrait",
+    "frontsize": 15
   },
- "tabBar": {
-    "color": "black",
+  "tabBar": {
+    "color": "silver",
     "selectedColor": "#4bacb8",
     "backgroundColor": "#ffffff",
-    "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "叶子",
-      "iconPath": "res/ic/ic_tabBar_home_inactive.png",
-      "selectedIconPath": "res/ic/ic_tabBar_home_selected.png"
-    }, {
-      "pagePath": "pages/notification/notification",
-      "text": "消息",
-      "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
-      "selectedIconPath": "res/ic/ic_tabBar_notification_selected.png"
-    }, {
-      "pagePath": "pages/about/about",
-      "text": "我的",
-      "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
-      "selectedIconPath": "res/ic/ic_tabBar_notification_inactive.png"
-    }],
-    "position": "buttom"
-    },
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "叶子",
+        "iconPath": "res/ic/ic_tabBar_home_inactive.png",
+        "selectedIconPath": "res/ic/ic_tabBar_home_selected.png"
+      },
+      {
+        "pagePath": "pages/notification/notification",
+        "text": "消息",
+        "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
+        "selectedIconPath": "res/ic/ic_tabBar_notification_selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "/res/ic/ic_tabBar_about_inactive.png",
+        "selectedIconPath": "/res/ic/ic_tabBar_about_selected.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "usingComponents": {
+    "i-button": "/dist/button/index",
+    "i-card": "/dist/card/index",
+    "i-input": "/dist/input/index",
+    "van-search": "/vant-weapp/search/index",
+    "van-button": "/vant-weapp/button/index",
+    "i-tabs": "/dist/tabs/index",
+    "i-tab": "/dist/tab/index",
+    "van-nav-bar": "/vant-weapp/nav-bar/index",
+    "i-cell-group": "/dist/cell-group/index",
+    "i-cell": "/dist/cell/index",
+    "i-avatar": "/dist/avatar/index"
+  },
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 20000,
     "uploadFile": 20000,
     "downloadFile": 20000
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

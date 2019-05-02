@@ -1,17 +1,19 @@
 <!-- pages/home/home.wxml - 主页结构 -->
-<view id='showcard'>
-
+<view id='swiper'><swiper circular='true' class='swiper1' autoplay='true' interval='5000' indicator-dots='true' indicator-color='white'>
+<swiper-item><image src='/res/image/1.jpg' class='slide-image'></image></swiper-item>
+<swiper-item><image src='/res/image/2.jpg' class='slide-image'></image></swiper-item>
+<swiper-item><image src='/res/image/3.jpg' class='slide-image'></image></swiper-item>
+</swiper></view>
+<!-- <navigator url='/pages/home/messeage_card/messeage_card'> -->
+<view wx:for="{{student_list}}">
+  <van-card title="{{item.subject}}" desc="{{item.name}}" thumb="/res/image/4.jpg" price="时薪：{{item.salary}}">
+    <view slot="tags">
+        <view>
+          <van-tag type="primary">{{item.position}}</van-tag>
+        </view>
+    </view>
+    <view slot="footer">
+      <van-button data-id="{{item._id}}" size="small" type="info" plain bind:click="viewItem">查看详情</van-button>
+    </view>
+  </van-card>
 </view>
-<view id='board'>
-  <button class='btn' id='btn1'>学生</button>
-  <button class='btn' id='btn2'>老师</button>
-  <button class='btn' id='btn3'>全部</button>
-</view>
-  <view class='mescard' id='card1'>
-  </view>
-  <view class='mescard' id='card2'>
-  </view>  
-  <view class='mescard' id='card3'>
-  </view>
-  <view class='mescard' id='card4'>
-  </view>

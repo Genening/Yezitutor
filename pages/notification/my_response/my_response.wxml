@@ -1,2 +1,29 @@
 <!--pages/notification/my_response/my_response.wxml-->
-<text>pages/notification/my_response/my_response.wxml</text>
+<view>
+  <input style='margin-top: 40rpx;' placeholder="请输入姓名" value="{{name}}" bindinput="bindKeyInputName" />
+  <input style='margin-top: 40rpx;' placeholder="请输入年龄" value="{{age}}" bindinput="bindKeyInputAge" />
+  <button style='margin-top: 40rpx;' bindtap='insertData'>插入数据</button>
+  <input style='margin-top: 40rpx;' placeholder="请输入记录ID" value="{{recordId}}" bindinput="bindKeyInputId" />
+
+  <button style='margin-top: 40rpx;' bindtap='queryData'>查询数据</button>
+
+  <text style='margin-top: 40rpx;'>
+     姓名：{{nameResult}}
+  </text>
+  <text style='margin-top: 80rpx;'>
+     年龄：{{ageResult}}
+  </text>
+</view>
+<!-- <form bindsubmit='formSubmit'>
+<view class='section'>
+  <view class='weui-cells__title'>数据库输入</view>
+  <view class='weui-cell weui-cell_input'>
+    <input class='weui-input' name='hello' placeholder='请输入数据'></input>
+    <input class='weui-input' name='hi' placeholder='请输入数据'></input>
+  </view>
+</view>
+<button form-type='submit'>写入</button>
+<button bindtap='jQuery'>查询</button>
+<button bindtap='onUpdate'>更新</button>
+<button bindtap='onDelete'>删除</button>
+</form> -->

@@ -1,1 +1,4 @@
 /* pages/home/navigation/navigation.wxss */
+.submit1 {
+  margin: auto
+}

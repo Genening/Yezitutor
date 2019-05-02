@@ -1,2 +1,15 @@
 <!--pages/home/messeage_card/messeage_card.wxml-->
-<text>pages/home/messeage_card/messeage_card.wxml</text>
+<view id='content'>
+  <view>
+    <i-cell-group>
+    <i-cell value="{{ student.name }}" title="姓名"></i-cell>
+    <i-cell value="{{ student.position }}" title="地区"></i-cell>
+    <i-cell value="{{ student.phone }}" title="联系电话"></i-cell>
+    <i-cell value="{{ student.wechat }}" title="微信号"></i-cell>
+    <i-cell value="{{ student.introduction }}" title="个人简介"></i-cell>
+    <i-cell value="{{ student.subject }}" title="辅导年级/科目"></i-cell>
+    <i-cell value="{{ student.salary }}" title="意向时薪"></i-cell>
+    <i-cell value="{{ student.more }}" title="备注"></i-cell>
+    </i-cell-group>
+  </view>
+</view>

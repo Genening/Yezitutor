@@ -1,2 +1,16 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<!--pages/personal/personal.wxml-->
+<view class="container">
+   <view class='percontent'>
+      <view class='photo'>
+         <view class="image">
+           <image class="tupian" style="width: 150rpx; height: 150rpx;" mode="{{item.mode}}" src="{{src}}"></image>
+         </view>
+         </view>
+      </view>
+</view>
+<i-cell-group>
+    <i-cell title="隐私条约" is-link url="/pages/about/privacyitems/privacyitems"></i-cell>
+    <i-cell title="问题反馈" is-link url="/pages/about/feedback/feedback"></i-cell>
+    <i-cell title="我的发布" is-link url="/pages/about/me/me"></i-cell>
+</i-cell-group>

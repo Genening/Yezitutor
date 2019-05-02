@@ -1,2 +1,5 @@
 <!--pages/notification/notification.wxml-->
-<text>pages/notification/notification.wxml</text>
+<i-cell-group>
+    <i-cell style="frontsize:15px" title="发布" is-link url="/pages/notification/my_release/my_release"></i-cell>
+    <i-cell style="frontsize:15px" title="通知" is-link url="/pages/notification/my_response/my_response"></i-cell>
+</i-cell-group>
