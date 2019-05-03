@@ -7,7 +7,7 @@
     <i-input value="{{ position }}" name="position" type='textarea' title="地区" placeholder="请填入您所在地区" /> 
     <i-input value="{{ phone }}" name="phone" type="textarea" title="联系电话" placeholder="请输入手机号"  maxlength='11'/>
     <i-input value="{{ wechat }}" name="wechat" type="textarea" title="微信号" placeholder="请输入您的微信号" />
-    <i-input value="{{ introduction }}" name="introduction" type="textarea" title="个人简介" placeholder="请输入(最多150字)" maxlength="150" />
+    <i-input value="{{ introduction }}" name="introduction" type="textarea" title="个人简介" placeholder="如就读院校等(最多150字)" maxlength="150" />
     <i-input value="{{ subject }}" name="subject" type='textarea' title="辅导年级/科目" placeholder='请输入意向年级/科目' />
     <i-input value="{{ salary }}" name="salary" type='textarea' title="意向时薪" value='元/小时'/>
     <i-input value="{{ more }}" name="more" type="textarea" title="备注" placeholder="您的备注（可以不填）" maxlength="50" />

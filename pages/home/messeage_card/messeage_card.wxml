@@ -2,14 +2,17 @@
 <view id='content'>
   <view>
     <i-cell-group>
-    <i-cell value="{{ student.name }}" title="姓名"></i-cell>
-    <i-cell value="{{ student.position }}" title="地区"></i-cell>
-    <i-cell value="{{ student.phone }}" title="联系电话"></i-cell>
-    <i-cell value="{{ student.wechat }}" title="微信号"></i-cell>
-    <i-cell value="{{ student.introduction }}" title="个人简介"></i-cell>
-    <i-cell value="{{ student.subject }}" title="辅导年级/科目"></i-cell>
-    <i-cell value="{{ student.salary }}" title="意向时薪"></i-cell>
-    <i-cell value="{{ student.more }}" title="备注"></i-cell>
+    <i-input value="{{ student.name }}" title="姓名" disabled='true'/>
+    <i-input value="{{ student.position }}" title="地区" disabled='true'/>
+    <i-input value="{{ student.phone }}" title="联系电话"/>
+    <i-input value="{{ student.wechat }}" title="微信号"/>
+    <i-input type='textarea' value="{{ student.introduction }}" title="个人简介" disabled='true'/>
+    <i-input value="{{ student.subject }}" title="年级/科目" disabled='true'/>
+    <i-input value="{{ student.salary }}" title="意向时薪" disabled='true'/>
+    <i-input value="{{ student.more }}" title="备注" disabled='true'/>
     </i-cell-group>
   </view>
+</view>
+<view>
+  <van-button type="info" style='margin-left:40%' bind:click="infromview">联系Ta</van-button>
 </view>

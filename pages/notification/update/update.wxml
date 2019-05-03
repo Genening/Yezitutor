@@ -1,0 +1,19 @@
+
+<!--pages/notification/my_release/my_release.wxml-->
+<view id='content'>
+<form bindsubmit='onUpdate' bindreset='onReset'>
+  <view class='weui-cell weui-cell_input'>
+    <i-input value='{{ student.name }}' name='name' type='textarea' title='姓名'/>
+    <i-input value="{{ student.position }}" name="position" type='textarea' title="地区"/> 
+    <i-input value="{{ student.phone }}" name="phone" type="textarea" title="联系电话" maxlength='11'/>
+    <i-input value="{{ student.wechat }}" name="wechat" type="textarea" title="微信号" />
+    <i-input value="{{ student.introduction }}" name="introduction" type="textarea" title="个人简介"/>
+    <i-input value="{{ student.subject }}" name="subject" type='textarea' title="辅导年级/科目" />
+    <i-input value="{{ student.salary }}" name="salary" type='textarea' title="意向时薪" value='元/小时'/>
+    <i-input value="{{ student.more }}" name="more" type="textarea" title="备注" maxlength="50" />
+    <button style='margin-left:2px;margin-right:2px;margin-top:5px' form-type='submit' type='primary' size='large'>更新</button>
+    <button style='margin-left:2px;margin-right:2px;margin-top:5px' form-type='reset' size='large'>重置</button>
+  </view>
+  </form>
+</view>
+

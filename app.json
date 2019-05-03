@@ -9,8 +9,8 @@
     "pages/notification/notification",
     "pages/notification/my_release/my_release",
     "pages/notification/my_response/my_response",
+    "pages/notification/update/update",
     "pages/about/about",
-    "pages/about/me/me",
     "pages/about/privacyitems/privacyitems",
     "pages/about/feedback/feedback"
   ],
@@ -43,7 +43,7 @@
       },
       {
         "pagePath": "pages/notification/notification",
-        "text": "消息",
+        "text": "发布",
         "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
         "selectedIconPath": "res/ic/ic_tabBar_notification_selected.png"
       },
@@ -67,7 +67,10 @@
     "van-nav-bar": "/vant-weapp/nav-bar/index",
     "i-cell-group": "/dist/cell-group/index",
     "i-cell": "/dist/cell/index",
-    "i-avatar": "/dist/avatar/index"
+    "i-avatar": "/dist/avatar/index",
+    "van-card": "vant-weapp/card/index",
+    "van-tag": "vant-weapp/tag/index",
+    "van-dialog": "vant-weapp/dialog/index"
   },
   "networkTimeout": {
     "request": 10000,
