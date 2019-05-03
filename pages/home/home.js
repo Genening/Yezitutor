@@ -58,16 +58,43 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+      // 显示顶部刷新图标
+      wx.showNavigationBarLoading();
+      var that = this;
 
-  },
+      db.collection('student').get({
+      success: res => {
+        this.setData({
+          student_list: res.data
+          })
+         }
+      });
+          console.log(that.data.moment);
+          // 隐藏导航栏加载框
+          wx.hideNavigationBarLoading();
+          // 停止下拉动作
+          wx.stopPullDownRefresh();
+        },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
-  },
-
+    var that = this;
+    // 显示加载图标
+    wx.showLoading({
+      title: '玩命加载中',
+    })
+    db.collection('student').get({
+      success: res => {
+        this.setData({
+          student_list: res.data
+        })
+      }
+    });
+        // 隐藏加载框
+        wx.hideLoading();
+      },
   /**
    * 用户点击右上角分享
    */

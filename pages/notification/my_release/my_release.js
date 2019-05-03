@@ -38,7 +38,7 @@ Page({
     })
   },
   onAdd: function(e){
-    var name = e.detail.value.hello
+    var name = e.detail.value.name
     var position = e.detail.value.position
     var phone = e.detail.value.phone
     var wechat = e.detail.value.wechat

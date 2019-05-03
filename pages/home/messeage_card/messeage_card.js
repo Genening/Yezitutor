@@ -1,12 +1,7 @@
 // pages/home/messeage_card/messeage_card.js
 const db = wx.cloud.database();
 Page({
-  onClickLeft() {
-    wx.showToast({ title: '点击返回', icon: 'none' });
-    wx.switchTab({
-      url: '/pages/home/home',   //注意switchTab只能跳转到带有tab的页面，不能跳转到不带tab的页面
-    });
-  },
+
   /**
    * 页面的初始数据
    */
@@ -31,6 +26,16 @@ Page({
       }
     })
     //console.log(options)
+  },
+  
+  /**
+   * 提示联系方式
+   */
+  infromview:function(options){
+   wx.showModal({
+     title: '提示信息',
+     content: '请长按联系电话或微信号选择复制并返回微信进行联系',
+   })
   },
 
   /**

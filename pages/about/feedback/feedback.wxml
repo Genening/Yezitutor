@@ -1,5 +1,5 @@
 <!--pages/about/feedback/feedback.wxml-->
 <form bindsubmit='Feedback'>
 <textarea class='textarea_bg' value='{{feedback}}' name='feedback' placeholder='您的反馈将帮助我们做得更好'></textarea>
-<button form-type='submit' class='primary'>提交</button>
+<button form-type='submit' type='primary'>提交</button>
 </form>

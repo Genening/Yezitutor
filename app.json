@@ -43,7 +43,7 @@
       },
       {
         "pagePath": "pages/notification/notification",
-        "text": "消息",
+        "text": "发布",
         "iconPath": "res/ic/ic_tabBar_notification_inactive.png",
         "selectedIconPath": "res/ic/ic_tabBar_notification_selected.png"
       },
@@ -69,7 +69,8 @@
     "i-cell": "/dist/cell/index",
     "i-avatar": "/dist/avatar/index",
     "van-card": "vant-weapp/card/index",
-    "van-tag": "vant-weapp/tag/index"
+    "van-tag": "vant-weapp/tag/index",
+    "van-dialog": "vant-weapp/dialog/index"
   },
   "networkTimeout": {
     "request": 10000,
